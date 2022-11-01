@@ -12,5 +12,18 @@ public class Author {
     public String getLastName(){
         return lastName;
     }
+    @Override
+    public boolean equals (Object obj){
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Author author = (Author) obj;
+        return firstName.equals(firstName) && lastName.equals(lastName);
+    }
+    public int hashCode (){
+        return java.util.Objects.hash(firstName, lastName);
+    }
+    public String toString(){
+        return "Автор " + firstName + " " + lastName;
+    }
 
 }

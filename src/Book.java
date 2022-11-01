@@ -19,6 +19,18 @@ public class Book {
     public void setYear(int year){
         this.year = year;
     }
+    public boolean equals (Object obj){
+        if (this == obj) return true;
+        if (obj == null || this.getClass() != obj.getClass()) return false;
+        Book book = (Book) obj;
+        return year == book.year && title.equals(title) && author.equals(author);
+    }
+    public int hashCode(){
+        return java.util.Objects.hash(title, author, year);
+    }
+    public String toString (){
+        return "Название: " + title + ", автор: " + author + ", год издания: " + year;
+    }
 
 
 }
