@@ -29,7 +29,7 @@ public class Book {
         return java.util.Objects.hash(title, author, year);
     }
     public String toString (){
-        return "Название: " + title + ", автор: " + author + ", год издания: " + year;
+        return "Название: " + getTitle() + ", автор: " + getAuthor() + ", год издания: " + getYear();
     }
 
 

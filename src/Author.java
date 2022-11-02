@@ -23,7 +23,7 @@ public class Author {
         return java.util.Objects.hash(firstName, lastName);
     }
     public String toString(){
-        return "Автор " + firstName + " " + lastName;
+        return firstName + " " + lastName;
     }
 
 }
