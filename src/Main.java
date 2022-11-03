@@ -7,8 +7,9 @@ public class Main {
         Author petrov = new Author("Petrov", "Petr");
         Book world = new Book("World", petrov, 2018);
         nature.setYear(2015);
-        System.out.println(nature.equals(nature1));
+        System.out.println(petrov);
+        //System.out.println(nature.equals(nature1));
         System.out.println(ivanov);
-        System.out.println(nature);
+        //System.out.println(nature);
     }
 }
