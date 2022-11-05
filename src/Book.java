@@ -28,13 +28,10 @@ public class Book {
     public int hashCode(){
         return java.util.Objects.hash(title, author, year);
     }
-    public static void main (String[] args){
-        Author test = new Author();
 
+    public String toString (){
+        return "Название: " + title + ", автор: " + author.toString() + ", год издания: " + year;
     }
-    //public String toString (){
-        //return "Название: " + getTitle() + ", автор: " + getAuthor() + ", год издания: " + getYear();
-    //}
 
 
 }
